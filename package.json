@@ -1,0 +1,32 @@
+{
+  "name": "forum-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "contract:emit": "prisma contract emit",
+    "db:init": "prisma db init --db \"$DATABASE_URL\""
+  },
+  "dependencies": {
+    "@prisma/orm-postgres": "latest",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "latest",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.0",
+    "prisma": "latest",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
